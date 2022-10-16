@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>亞舍瑞宇</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/flaticon.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link rel="stylesheet" href="css/woocommerce.css" />
+    <link rel="stylesheet" href="css/royal-preload.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/test.css" />
+
+    <!-- 我不是機器人驗證 網域在localhost 參考https://medium.com/@d101201007/google-recaptcha%E6%A9%9F%E5%99%A8%E4%BA%BA%E9%A9%97%E8%AD%89-%E6%95%99%E5%AD%B8-php%E7%AF%84%E4%BE%8B-3685a394dce2 -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body>
+    <div id="royal_preloader"></div>
+    <div id="page" class="site">
+        <header id="site-header" class="site-header header-transparent">
+            <!-- Main Header start -->
+            <div class="octf-main-header is-fixed">
+                <div class="octf-area-wrap">
+                    <div class="container-fluid octf-mainbar-container">
+                        <div class="octf-mainbar">
+                            <div class="octf-mainbar-row octf-row">
+                                <div class="octf-col logo-col no-padding">
+                                    <div id="site-logo" class="site-logo">
+                                        <a href="index.html">
+                                            <img src="images/logo.svg" alt="Theratio" class="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- 主選單 -->
+                                <div class="octf-col menu-col no-padding">
+                                    <nav id="site-navigation" class="main-navigation">
+                                        <ul class="menu">
+                                            <li><a href="about-us.html">認識亞舍</a></li>
+                                            <li class="menu-item-has-children"><a href="shop.html">產品介紹</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="shop.html">所有產品</a></li>
+                                                    <li><a href="shop.html">沙發</a></li>
+                                                    <li><a href="shop.html">床台</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="blog.html">知識訊息</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="blog.html">所有文章</a></li>
+                                                    <li><a href="blog.html">分類一</a></li>
+                                                    <li><a href="blog.html">分類二</a></li>
+                                                    <li><a href="blog.html">分類三</a></li>
+                                                    <li><a href="blog.html">分類四</a></li>
+                                                    <li><a href="blog.html">分類五</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="our-studio.html">工廠介紹</a></li>
+                                            <li class="current-menu-item"><a href="contact.html">聯絡亞舍</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div class="octf-col cta-col text-right no-padding">
+                                <!-- Call To Action -->
+                                    <div class="octf-btn-cta">
+                                        <!-- 搜尋 -->
+                                        <div class="octf-search octf-cta-header">
+                                            <div class="toggle_search octf-cta-icons">
+                                                <i class="ot-flaticon-search"></i>
+                                            </div>
+                                            <!-- Form Search on Header -->
+                                            <div class="h-search-form-field collapse">
+                                                <div class="h-search-form-inner">
+                                                    <form role="search" method="get" class="search-form">
+                                                        <input type="search" class="search-field" placeholder="SEARCH..." value="" name="s">
+                                                        <button type="submit" class="search-submit"><i class="ot-flaticon-search"></i></button>
+                                                    </form>
+                                                </div>                                  
+                                            </div>
+                                        </div>
+                                        <!-- 右側收納選單 -->
+                                        <div class="octf-sidepanel octf-cta-header">
+                                            <div class="site-overlay panel-overlay"></div>
+                                            <div id="panel-btn" class="panel-btn octf-cta-icons">
+                                                <i class="ot-flaticon-menu"></i>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>                              
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_mobile">
+                <div class="container-fluid">
+                    <div class="octf-mainbar-row octf-row">
+                        <div class="octf-col">
+                            <div class="mlogo_wrapper clearfix">
+                                <div class="mobile_logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.svg" alt="Theratio">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="octf-col justify-content-end">
+                            <div class="octf-search octf-cta-header">
+                                <div class="toggle_search octf-cta-icons">
+                                    <i class="ot-flaticon-search"></i>
+                                </div>
+                                <!-- Form Search on Header -->
+                                <div class="h-search-form-field collapse">
+                                    <div class="h-search-form-inner">
+                                        <form role="search" method="get" class="search-form">
+                                            <input type="search" class="search-field" placeholder="SEARCH..." value="" name="s">
+                                            <button type="submit" class="search-submit"><i class="ot-flaticon-search"></i></button>
+                                        </form>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="octf-menu-mobile octf-cta-header">
+                                <div id="mmenu-toggle" class="mmenu-toggle">
+                                    <button><i class="ot-flaticon-menu"></i></button>
+                                </div>
+                                <div class="site-overlay mmenu-overlay"></div>
+                                <div id="mmenu-wrapper" class="mmenu-wrapper on-right">
+                                    <div class="mmenu-inner">
+                                        <a class="mmenu-close" href="#"><i class="ot-flaticon-right-arrow"></i></a>
+                                        <!-- 手機板漢堡主選單 -->
+                                        <div class="mobile-nav">
+                                            <ul id="menu-main-menu" class="mobile_mainmenu none-style">
+                                                <li><a href="index.html">首頁</a></li>
+                                                <li><a href="about-us.html">認識亞舍</a></li>
+                                                <li class="menu-item-has-children"><a href="shop.html">產品介紹</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="shop.html">所有產品</a></li>
+                                                        <li><a href="shop.html">沙發</a></li>
+                                                        <li><a href="shop.html">床台</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-item-has-children"><a href="blog.html">知識訊息</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="blog.html">所有文章</a></li>
+                                                        <li><a href="blog.html">分類一</a></li>
+                                                        <li><a href="blog.html">分類二</a></li>
+                                                        <li><a href="blog.html">分類三</a></li>
+                                                        <li><a href="blog.html">分類四</a></li>
+                                                        <li><a href="blog.html">分類五</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="our-studio.html">工廠介紹</a></li>
+                                                <li><a href="contact.html">聯絡亞舍</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 右側收納選單內容 -->
+        <div id="side-panel" class="side-panel">
+            <a href="#" class="side-panel-close"><i class="ot-flaticon-close-1"></i></a>
+            <div class="side-panel-block">
+                <div class="side-panel-wrap">
+                    <div class="the-logo">
+                        <a href="index-html">
+                            <img src="images/logo-footer.svg" alt="Theratio">
+                        </a>                    
+                    </div>
+                    <div class="ot-heading">
+                        <h2 class="main-heading">熱門推薦</h2>
+                    </div>
+                    <div class="image-gallery">
+                        <div id="gallery-1" class="gallery galleryid-102 gallery-columns-3 gallery-size-thumbnail">
+                            <figure class="gallery-item">
+                                <div class="gallery-icon landscape">
+                                    <a href="images/news1.jpg">
+                                        <img src="images/topnews.jpg" class="" alt="">
+                                    </a>
+                                </div>
+                            </figure>
+                            <figure class="gallery-item">
+                                <div class="gallery-icon landscape">
+                                    <a href="images/news2.jpg">
+                                        <img src="images/topnews2.jpg" class="" alt="">
+                                    </a>
+                                </div>
+                            </figure>
+                            <figure class="gallery-item">
+                                <div class="gallery-icon landscape">
+                                    <a href="images/news3.jpg">
+                                        <img src="images/topnews3.jpg" class="" alt="">
+                                    </a>
+                                </div>
+                            </figure>
+                            <figure class="gallery-item">
+                                <div class="gallery-icon landscape">
+                                    <a href="images/news8.jpg">
+                                        <img src="images/topnews4.jpg" class="" alt="">
+                                    </a>
+                                </div>
+                            </figure>
+                            <figure class="gallery-item">
+                                <div class="gallery-icon landscape">
+                                    <a href="images/news6.jpg">
+                                        <img src="images/topnews5.jpg" class="" alt="">
+                                    </a>
+                                </div>
+                            </figure>
+                            <figure class="gallery-item">
+                                <div class="gallery-icon landscape">
+                                    <a href="images/news5.jpg">
+                                        <img src="images/topnews6.jpg" class="" alt="">
+                                    </a>
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="ot-heading ">
+                        <h2 class="main-heading">聯絡資訊</h2>
+                    </div>
+                    <div class="side-panel-cinfo">
+                        <ul class="panel-cinfo">
+                            <li class="panel-list-item">
+                                <span class="panel-list-icon"><i class="ot-flaticon-place"></i></span>
+                                <span class="panel-list-text">台中市潭子區大豐一路301-2號</span>
+                            </li>
+                            <li class="panel-list-item">
+                                <span class="panel-list-icon"><i class="ot-flaticon-mail"></i></span>
+                                <span class="panel-list-text">yasherueiyu@gmail.com</span>
+                            </li>
+                            <li class="panel-list-item">
+                                <span class="panel-list-icon"><i class="ot-flaticon-phone-call"></i></span>
+                                <span class="panel-list-text">04-25357398</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="side-panel-social">
+                        <ul>
+                            <li><a href="http://facebook.com" target="_self"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://line.me/zh-hant/" target="_self"><i class="fab fa-line"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="content" class="site-content">
+            <div class="page-header dtable text-center header-transparent page-header-contact">
+                <div class="dcell">
+                    <div class="container">
+                        <h1 class="page-title">連絡亞舍</h1>
+                        <ul id="breadcrumbs" class="breadcrumbs none-style">
+                            <li><a href="index.html">首頁</a></li>
+                            <li class="active">連絡亞舍</li>
+                        </ul>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="contact-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 align-self-center mb-5 mb-lg-0">
+                        <div class="contact-left contactleft2">
+                            <h2>聯絡亞舍</h2>
+                            <p class="font14 contact1">您的電子郵件地址不會被公開。 必需的地方已做 * 標記。</p>
+                            <form id="ajax-form" name="ajax-form" action="contact.php" method="post" class="wpcf7">
+                                <div class="main-form">
+                                    <p>
+                                        <label for="name"> <span class="error errorcolor" id="err-name">請輸入您的姓名！</span></label>
+                                        <input type="text" name="name" value="" size="40" class="" aria-invalid="false" placeholder="姓名 *" required>
+                                    </p>
+                                    <p>
+                                        <label for="email"> 
+                                            <span class="error errorcolor" id="err-email">請輸入您的信箱！</span>
+                                            <span class="error errorcolor" id="err-emailvld">信箱格式不正確！</span>
+                                        </label>
+                                        <input type="email" name="email" id="email" value="" size="40" class="" aria-invalid="false" placeholder="信箱 *" required>
+                                    </p>
+                                    <p>
+                                        <label for="email"> 
+                                            <span class="error errorcolor" id="err-email">請輸入您的電話！</span>
+                                            <span class="error errorcolor" id="err-emailvld">電話格式不正確！</span>
+                                        </label>
+                                        <input type="email" name="email" id="email" value="" size="40" class="" aria-invalid="false" placeholder="聯繫電話 *" required>
+                                    </p>
+                                    <p>
+                                        <label for="message"></label>
+                                        <textarea name="message" id="message" cols="40" rows="10" class="" aria-invalid="false" placeholder="想對亞舍說..." required></textarea>
+                                    </p>
+                                    <div>
+                                        <input type="checkbox" id="agree" name="agree" class="col-lg-1">
+                                        <label for="agree" class="agree col-lg-11">我同意<a href="">網站服務條款</a>及<a href="">隱私政策</a></label>
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey="6LexZ9MgAAAAAOLVO1RPxE-92WsBPS89NQagu5d3"></div>
+                                    <p><button type="submit" id="send" class="octf-btn">送出！</button></p>
+                                    <div class="clear"></div>   
+                                    <div class="error" id="err-form">驗證表單時出現問題，請檢查！</div>
+                                    <div class="error" id="err-timedout">與服務器的連接已逾時！</div>
+                                    <div class="error" id="err-state"></div>
+                                </div>
+                            </form>
+
+                            <div class="clear"></div>
+                            <div id="ajaxsuccess">送出成功！我們會盡快給予回應，感謝您對亞舍的支持！</div>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 contact2">
+                        <div class="contact-right">
+                            <div class="ot-heading">
+                                <span>[ 關於亞舍 ]</span>
+                                <h2 class="main-heading">怎麼找到亞舍瑞宇?</h2>
+                            </div>
+                            <p>亞舍營業時間：週一至週六早上10:00 ~ 晚上20:00，週日公休，國定假日營業時間請洽最新消息公告。</p>
+                            <div class="contact-info">
+                                <i class="ot-flaticon-place"></i>
+                                <div class="info-text">
+                                    <h6>OUR ADDRESS:</h6>
+                                    <p>台中市潭子區大豐一路301-2號</p>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <i class="ot-flaticon-mail"></i>
+                                <div class="info-text">
+                                    <h6>OUR MAILBOX:</h6>
+                                    <p><a href="mailto:yasherueiyu@gmail.com">yasherueiyu@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="contact-info">
+                                <i class="ot-flaticon-phone-call"></i>
+                                <div class="info-text">
+                                    <h6>OUR PHONE:</h6>
+                                    <p><a href="tel:04-25357398">04-25357398</a></p>
+                                </div>
+                            </div>
+                            <div class="list-social">
+                                <ul>
+                                    <li><a href="http://facebook.com" target="_self"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="http://linkedin.com" target="_self"><i class="fab fa-line"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="contact-map">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14555.644975062765!2d120.6852325!3d24.2098879!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd99b8fe3272e478d!2z5Lqe6IiN55Ge5a6H5YKi5L-x5bel5bug!5e0!3m2!1szh-TW!2stw!4v1657248529718!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    <!-- 頁尾 -->
+    <footer id="site-footer" class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
+                    <div class="widget-footer">
+                        <img src="images/logo-footer.svg" class="footer-logo" alt="">
+                        <p>營業時間<br>
+                            週一至週六 10:00 ~ 20:00 週日公休<br>
+                            國定假日營業時間請洽最新消息公告</p>
+                        <div class="footer-social list-social">
+                            <ul>
+                                <li><a href="http://facebook.com" target="_self"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://line.me/zh-hant/" target="_self"><i class="fab fa-line"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-xl-0">
+                    <div class="widget-footer">
+                        <h6>聯絡資訊</h6>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <span class="list-item-icon"><i class="ot-flaticon-place"></i></span>
+                                <span class="list-item-text">台中市潭子區大豐一路301-2號</span>
+                            </li>
+                            <li class="footer-list-item">
+                                <span class="list-item-icon"><i class="ot-flaticon-mail"></i></span>
+                                <span class="list-item-text">yasherueiyu@gmail.com</span>
+                            </li>
+                            <li class="footer-list-item">
+                                <span class="list-item-icon"><i class="ot-flaticon-phone-call"></i></span>
+                                <span class="list-item-text">04-25357398</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 mb-4 mb-md-0">
+                    <div class="widget-footer widget-contact">
+                        <h6>熱門推薦</h6>
+                        <ul>
+                            <li><a href="#">Stylish Family Appartment</a></li>
+                            <li><a href="#">Modern Villa in Belgium</a></li>
+                            <li><a href="#">Private House in Spain</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- #site-footer -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 mb-4 mb-lg-0">
+                    <p>Copyright © 2020 Theratio by <a class="text-light" href="#">亞舍瑞宇</a>. All Rights Reserved.</p>
+                </div>
+                <div class="col-lg-5 col-md-12 align-self-center">
+                    <ul class="icon-list-items inline-items justify-content-lg-end">
+                        <li class="icon-list-item inline-item">
+                            <a href="#"><span class="icon-list-text">Terms of use</span></a>
+                        </li>
+                        <li class="icon-list-item inline-item">
+                            <a href="#"><span class="icon-list-text">Privacy Environmental Policy</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!-- #page -->
+<a id="back-to-top" href="#" class="show"><i class="ot-flaticon-left-arrow"></i></a>
+        <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/mousewheel.min.js"></script>
+    <script src="js/lightgallery-all.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/easypiechart.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/royal_preloader.min.js"></script>
+    <script>
+        window.jQuery = window.$ = jQuery;  
+        (function($) { "use strict";
+            //Preloader
+            Royal_Preloader.config({
+                mode           :   'progress',
+                background     :   '#1a1a1a',
+            });
+        })(jQuery);
+    </script>  
+</body>
+</html>
